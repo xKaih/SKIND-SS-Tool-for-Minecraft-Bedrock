@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SKIND_SS_Tool", "SKIND_SS_Tool.csproj", "{B4F7869D-0BB1-4D9C-9CCE-05D20C6F5701}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4F7869D-0BB1-4D9C-9CCE-05D20C6F5701}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4F7869D-0BB1-4D9C-9CCE-05D20C6F5701}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4F7869D-0BB1-4D9C-9CCE-05D20C6F5701}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4F7869D-0BB1-4D9C-9CCE-05D20C6F5701}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B5DD210-399B-4092-9F88-9B005680B31F}
+	EndGlobalSection
+EndGlobal
