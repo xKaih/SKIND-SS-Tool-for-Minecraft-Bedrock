@@ -1,7 +1,7 @@
 
 # SKIND SS Tool for Minecraft Bedrock (C#)
 
-AN open source C# SS Tool that provide to the users a good and reliable SS Tool for Minecraft Bedrock
+An open source C# SS Tool that provide to the users a good and reliable SS Tool for Minecraft Bedrock
 
 
 ![Logo](https://cdn.discordapp.com/attachments/882975830773469184/1007635394193535026/skind.png)
