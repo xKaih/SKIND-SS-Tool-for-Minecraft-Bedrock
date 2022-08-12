@@ -81,7 +81,7 @@ TRATAMIENTOS EN EL SOFTWARE.
 
 ## 🙌 Support 🙌
 
-For support, email fake@fake.com or join our Slack channel.
+For support, discord https://discord.gg/kn9JHRpmjc.
 
 
 ## 🙏Special Thanks!🙏
