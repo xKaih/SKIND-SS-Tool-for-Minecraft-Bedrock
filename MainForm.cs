@@ -101,11 +101,13 @@ namespace SKIND_SS_Tool
                 ScanDevice.Enabled = true;
             }
         }
-
+        
         #region Scan
 
         private async void ScanDevice_Click(object sender, EventArgs e)
         {
+            results.Rows.Clear();
+            ScanDevice.Text.Split(new [] {"\r\n"} , StringSplitOptions.None);
             ScanDevice.Text = "Scanning...";
             ScanDevice.Enabled = false;
             strings.CPUUsage = double.Parse(CPUUsage.Text);
@@ -118,13 +120,16 @@ namespace SKIND_SS_Tool
             {
                 File.WriteAllText("bypass.txt", "Nothing Founded");
             }
-            for (int i = 0; i < strings.cheatsFounded.Count; i++)
-            { 
-                results.Rows.Add(new object[] { strings.cheatsFounded[i].Split(new[] { "|" }, StringSplitOptions.None)[0], strings.cheatsFounded[i].Split(new[] { "|" }, StringSplitOptions.None)[1]});
+
+            foreach (var x in strings.cheatsFounded)
+            {
+                results.Rows.Add(new object[] { x.Split(new[] { "|" }, StringSplitOptions.None)[0], x.Split(new[] { "|" }, StringSplitOptions.None)[1]});
+            }
+            if (strings.cheatsFounded.Count == 0)
+            {
+                results.Rows.Add(new object[] { "Nothing Founded", "Nothing Founded" });
             }
 
-            results.Rows.Add(new object[] { "Nothing Founded", "Nothing Founded" });
-            
         }
         private async Task scanFileTask()
         {

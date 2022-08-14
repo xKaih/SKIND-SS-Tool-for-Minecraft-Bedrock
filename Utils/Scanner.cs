@@ -41,19 +41,20 @@ namespace SKIND_SS_Tool.Utils
         {
             WebClient webClient = new WebClient();
             string cheatStrings = webClient.DownloadString("https://rentry.co/EuclidStrings/raw"); //Update the url (that need to be raw)
-            foreach (var line in cheatStrings.Split('\n')) //The strings need to be separated by new lines
-            {
-                if (line.Length > 4)
+            Parallel.ForEach(cheatStrings.Split(new[] {"\r\n"}, StringSplitOptions.None),
+                line => //The strings need to be separated by new lines
                 {
+                    if (line.Length > 4)
+                    {
 
-                    string[] parsed = line.Split('_'); //The string and the name of the cheat need to be separated with _
-                    strings.cheatStrings.Add(parsed.ElementAt(0),
-                        parsed.ElementAt(1));//Add into the dictionary the string with their cheat name respectively
+                        string[]
+                            parsed = line.Split('_'); //The string and the name of the cheat need to be separated with _
+                        strings.cheatStrings.TryAdd(parsed.ElementAt(0),
+                            parsed.ElementAt(
+                                1)); //Add into the dictionary the string with their cheat name respectively
 
-                    
-
-                }
-            }
+                    }
+                });
             Console.WriteLine("Strings loaded: " + strings.cheatStrings.Count);
 
         }
@@ -214,7 +215,6 @@ namespace SKIND_SS_Tool.Utils
         //Detect if taskmanager is disable with regedit
         private static void taskManagerDisabled()
         {
-#pragma warning disable CS0168 // La variable 'e' se ha declarado pero nunca se usa
             try
             {
                 int task = int.Parse(Registry.GetValue(
@@ -224,7 +224,6 @@ namespace SKIND_SS_Tool.Utils
                     strings.bypassMethods.Add("The taskmanager is disabled, check the registry key HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System!!!");
             }
             catch (Exception e) { }
-#pragma warning restore CS0168 // La variable 'e' se ha declarado pero nunca se usa
 
         }
 
