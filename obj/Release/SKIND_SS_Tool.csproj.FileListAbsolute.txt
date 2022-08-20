@@ -1,0 +1,17 @@
+C:\Users\elpri\Desktop\SKIND\SKIND_SS_Tool\bin\Release\SKIND_SS_Tool.exe.config
+C:\Users\elpri\Desktop\SKIND\SKIND_SS_Tool\bin\Release\SKIND_SS_Tool.exe
+C:\Users\elpri\Desktop\SKIND\SKIND_SS_Tool\bin\Release\SKIND_SS_Tool.pdb
+C:\Users\elpri\Desktop\SKIND\SKIND_SS_Tool\bin\Release\System.Diagnostics.DiagnosticSource.xml
+C:\Users\elpri\Desktop\SKIND\SKIND_SS_Tool\bin\Release\System.Diagnostics.EventLog.xml
+C:\Users\elpri\Desktop\SKIND\SKIND_SS_Tool\bin\Release\System.Security.Principal.Windows.xml
+C:\Users\elpri\Desktop\SKIND\SKIND_SS_Tool\bin\Release\System.ServiceProcess.ServiceController.xml
+C:\Users\elpri\Desktop\SKIND\SKIND_SS_Tool\obj\Release\SKIND_SS_Tool.csproj.AssemblyReference.cache
+C:\Users\elpri\Desktop\SKIND\SKIND_SS_Tool\obj\Release\SKIND_SS_Tool.csproj.SuggestedBindingRedirects.cache
+C:\Users\elpri\Desktop\SKIND\SKIND_SS_Tool\obj\Release\SKIND_SS_Tool.MainForm.resources
+C:\Users\elpri\Desktop\SKIND\SKIND_SS_Tool\obj\Release\SKIND_SS_Tool.Properties.Resources.resources
+C:\Users\elpri\Desktop\SKIND\SKIND_SS_Tool\obj\Release\SKIND_SS_Tool.csproj.GenerateResource.cache
+C:\Users\elpri\Desktop\SKIND\SKIND_SS_Tool\obj\Release\SKIND_SS_Tool.csproj.CoreCompileInputs.cache
+C:\Users\elpri\Desktop\SKIND\SKIND_SS_Tool\obj\Release\SKIND_SS_Tool.csproj.Fody.CopyLocal.cache
+C:\Users\elpri\Desktop\SKIND\SKIND_SS_Tool\obj\Release\SKIND_SS_Tool.csproj.CopyComplete
+C:\Users\elpri\Desktop\SKIND\SKIND_SS_Tool\obj\Release\SKIND_SS_Tool.exe
+C:\Users\elpri\Desktop\SKIND\SKIND_SS_Tool\obj\Release\SKIND_SS_Tool.pdb

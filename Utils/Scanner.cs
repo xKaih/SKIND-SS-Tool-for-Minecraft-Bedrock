@@ -40,23 +40,13 @@ namespace SKIND_SS_Tool.Utils
         private static void initializeDetections()
         {
             WebClient webClient = new WebClient();
-            string cheatStrings = webClient.DownloadString("https://rentry.co/EuclidStrings/raw"); //Update the url (that need to be raw)
+            string cheatStrings = webClient.DownloadString("https://rentry.co/skindStrings/raw"); //Update the url (that need to be raw)
             Parallel.ForEach(cheatStrings.Split(new[] {"\r\n"}, StringSplitOptions.None),
                 line => //The strings need to be separated by new lines
                 {
-                    if (line.Length > 4)
-                    {
-
-                        string[]
-                            parsed = line.Split('_'); //The string and the name of the cheat need to be separated with _
-                        strings.cheatStrings.TryAdd(parsed.ElementAt(0),
-                            parsed.ElementAt(
-                                1)); //Add into the dictionary the string with their cheat name respectively
-
-                    }
+                    strings.cheatStrings.TryAdd(line.Split('_')[0], line.Split('_')[1]); //Add into the dictionary the string with their cheat name respectively
                 });
             Console.WriteLine("Strings loaded: " + strings.cheatStrings.Count);
-
         }
         //Collect strings of the principal processes
         private static void collectStrings()
@@ -112,8 +102,8 @@ namespace SKIND_SS_Tool.Utils
                     }
                 }
             });
-            Console.WriteLine("Cheats founded with string scanner: " + strings.cheatsFounded.Count);
 
+            Console.WriteLine("Cheats founded with string scanner: " + strings.cheatsFounded.Count);
         }
 
         #endregion
