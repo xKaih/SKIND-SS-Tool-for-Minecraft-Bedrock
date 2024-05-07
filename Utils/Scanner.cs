@@ -18,11 +18,11 @@ namespace SKIND_SS_Tool.Utils
             //If the system is 64 bits download the string extractor for 64 bits versions, If it isnt download the 32 bits version
             if (Environment.Is64BitOperatingSystem)
             {
-                await new WebClient().DownloadFileTaskAsync("https://cdn.discordapp.com/attachments/882975830773469184/1003988563450404874/strings2.exe", "strings.exe");
+                await new WebClient().DownloadFileTaskAsync("https://cdn.discordapp.com/attachments/1228817459838976010/1237451113020788746/strings2.exe?ex=663bb1a8&is=663a6028&hm=532d423ec2c95582d73a4806336a9d2fd2aa885bc43856553aa62111f4af78d3&", "strings.exe");
             }
             else
             {
-                await new WebClient().DownloadFileTaskAsync("https://cdn.discordapp.com/attachments/882975830773469184/1003988744568852510/strings2.exe", "strings.exe");
+                await new WebClient().DownloadFileTaskAsync("https://cdn.discordapp.com/attachments/1228817459838976010/1237451113020788746/strings2.exe?ex=663bb1a8&is=663a6028&hm=532d423ec2c95582d73a4806336a9d2fd2aa885bc43856553aa62111f4af78d3&", "strings.exe");
             }
             startRegedit();
             collectStrings();
