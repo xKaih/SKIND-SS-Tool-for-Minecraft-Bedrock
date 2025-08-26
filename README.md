@@ -1,3 +1,6 @@
+# THIS PROJECT IS CURRENTLY ABANDONED 
+
+Maybe in the future I make some similiar one with several improvements.
 
 # SKIND SS Tool for Minecraft Bedrock (C#)
 
